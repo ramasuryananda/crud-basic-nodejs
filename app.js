@@ -40,7 +40,7 @@ app.post('/add',(req,res)=>{
     'Insert into users (firstname) values(?)',
     [req.body.Name],
     (error,results)=>{
-      res.redirect('/')
+      res.redirect('/');
     }
   );
 })
